@@ -4,6 +4,10 @@ function obtenerSaludo(nombre) {
   // Ejemplo: "Martin" ---> "Hola Martin!"
   // Retorna el nuevo string. 
   // Tu código:
+  saludo = 'Hola';
+  espacio = ' ';
+  exclamacion = '!';
+  return saludo + espacio + nombre + exclamacion;
 }
 
 module.exports = obtenerSaludo;

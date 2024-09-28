@@ -4,6 +4,8 @@ function combinarNombres(nombre, apellido) {
   // Por ejemplo: 
   // "Soy", "Henry" ---> "Soy Henry"
   // Tu código:
+  espacio = ' ';
+  return nombre + espacio + apellido;
 }
 
 module.exports = combinarNombres;
