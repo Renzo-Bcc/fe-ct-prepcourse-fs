@@ -9,4 +9,12 @@ function tieneTresDigitos(num) {
   }
 }
 
+/** OTRA FORMA DE HACER EL EJERCICIO:
+ * function tieneTresDigitos(num){
+ *  return Math.abs(num).toString().length === 3;
+ * }
+ * console.log(tieneTresDigitos(-99)); //false
+ * console.log(tieneTresDigitos(-199)); // true
+ */
+
 module.exports = tieneTresDigitos;

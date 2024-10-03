@@ -7,6 +7,16 @@ function combine(str1, str2, str3) {
   // combine("abc", "12345", "") == "a1b2c345"
   // combine("abc", "12345", "67") == "a16b27c345"
   // Tu código:
+  let resultado = '';
+  let maxLength = Math.max(str1.length, str2.length, str3.length);
+
+  for (let i = 0; i < maxLength; i++) {
+    if (str1[i]) resultado += str1[i];  // Añadir el caracter si existe en str1
+    if (str2[i]) resultado += str2[i];  // Añadir el caracter si existe en str2
+    if (str3[i]) resultado += str3[i];  // Añadir el caracter si existe en str3
+  }
+
+  return resultado;
 }
 
 module.exports = combine;
